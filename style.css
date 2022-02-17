@@ -1,0 +1,78 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.desktop{
+    display: none;
+}
+h1,p{
+   font-family: Spartan;
+}
+header{
+    position: relative;
+    background-image: url(images/mobile-image-hero-1.jpg);
+   height: 23rem;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: hsl(0, 0%, 100%);
+    font-family: Spartan;
+}
+p.title{
+    width: 100%;
+    text-align: center;
+padding-top: 1.5rem;
+font-size: 1.5em;
+line-height: 1em;
+}
+div.menu-bar {
+    position: fixed;
+    top:1.8rem;
+    left: 1rem;
+    font-size: 1.2em;
+    cursor: pointer;
+    line-height: 1em;
+}
+.menu-mobile {
+    position: fixed;
+    top:0;
+    left:-100%;
+}
+.arrows div {
+    background-color: black;
+position: absolute;
+right: 0;
+bottom: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 70px;
+height: 60px;
+}
+
+.arrows div.left {
+    right: 70px;
+}
+
+.description  {
+margin: 1.8rem;
+}
+.description h1 {
+    margin: 2.5em 0 0.8em 0;
+}
+.description p {
+    font-size: 12px;
+    color: hsl(0, 0%, 63%);
+    line-height: 1.6em;
+}
+
+.shopNowButton {
+    display: flex;
+        margin: 2rem 0;
+}
+.shopNowButton p{
+    text-transform: uppercase;
+    color:hsl(0, 0%, 27%);
+}
