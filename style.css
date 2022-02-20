@@ -7,13 +7,17 @@ box-sizing: border-box;
 .desktop{
     display: none;
 }
-h1,p{
-   font-family: Spartan;
+h1,p, h2{
+   font-family: Spartan, sans-serif;
+}
+body{
+    width: 100v;
 }
 header{
     position: relative;
     background-image: url(images/mobile-image-hero-1.jpg);
    height: 23rem;
+   width: 100vw;
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -25,7 +29,8 @@ p.title{
     text-align: center;
 padding-top: 1.5rem;
 font-size: 1.5em;
-line-height: 1em;
+line-height: 1.1em;
+color: white;
 }
 div.menu-bar {
     position: fixed;
@@ -58,11 +63,18 @@ height: 60px;
 
 .description  {
 margin: 1.8rem;
+margin-bottom: 3.5rem;
 }
-.description h1 {
-    margin: 2.5em 0 0.8em 0;
+ h1 {
+    margin: 5rem 0 0.6rem 0;
 }
-.description p {
+h2{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing:0.3rem;    
+    margin: 4rem 0 0.6rem 0;
+}
+ p {
     font-size: 12px;
     color: hsl(0, 0%, 63%);
     line-height: 1.6em;
@@ -70,9 +82,18 @@ margin: 1.8rem;
 
 .shopNowButton {
     display: flex;
-        margin: 2rem 0;
+        margin: 4rem 0;
+        height: 20px;
 }
 .shopNowButton p{
     text-transform: uppercase;
     color:hsl(0, 0%, 27%);
+    letter-spacing: 1em;
+}
+.shopNowButton img {
+height: 50%;
+margin: 0.4em 0 1em 2em;
+}
+img.photo {
+    width: 100vw;
 }
