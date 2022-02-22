@@ -14,14 +14,29 @@
 </head>
 
 <body>
+
+
     <header class='title-menuIcon mobile'>
-        <div class="menu-bar"><img src="images/icon-hamburger.svg" alt="hamb"> </div>
         <div>
             <p class='title'>room</p>
         </div>
+        <div class="menu-bar"><img src="images/icon-hamburger.svg" alt="hamb"> </div>
+
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="images/mobile-image-hero-3.jpg" alt="" id="lastclone">
+                <img src="images/mobile-image-hero-1.jpg" alt="">
+                <img src="images/mobile-image-hero-2.jpg" alt="">
+                <img src="images/mobile-image-hero-3.jpg" alt="">
+                <img src="images/mobile-image-hero-1.jpg" alt="" id="firstclone">
+
+            </div>
+        </div>
         <div class="arrows">
-            <div class='left'><img src="images/icon-angle-left.svg" alt="left"></div>
-            <div class='right'><img src="images/icon-angle-right.svg" alt="right"></div>
+            <div class='left' id="prevBtn" role="button" data-slide="prev"><img src="images/icon-angle-left.svg"
+                    alt="left"></div>
+            <div class='right' id="nextBtn" role="button" data-slide="next"><img src="images/icon-angle-right.svg"
+                    alt="right"></div>
         </div>
     </header>
     <nav class="menu-mobile">
@@ -74,5 +89,8 @@
     </section>
 </body>
 <script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+</script>
 
 </html>
