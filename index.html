@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Spartan:wght@500;600;700&display=swap"
         rel="stylesheet">
+
     <title>Document</title>
 </head>
 
@@ -21,22 +23,18 @@
             <p class='title'>room</p>
         </div>
         <div class="menu-bar"><img src="images/icon-hamburger.svg" alt="hamb"> </div>
-
-        <div class="carousel-container">
-            <div class="carousel-slide">
-                <img src="images/mobile-image-hero-3.jpg" alt="" id="lastclone">
-                <img src="images/mobile-image-hero-1.jpg" alt="">
-                <img src="images/mobile-image-hero-2.jpg" alt="">
-                <img src="images/mobile-image-hero-3.jpg" alt="">
-                <img src="images/mobile-image-hero-1.jpg" alt="" id="firstclone">
-
+        <div class='carousel' data-carousel>
+            <ul data-slides>
+                <li class="slide" data-active><img src="images/mobile-image-hero-1.jpg" alt="p1"></li>
+                <li class="slide"><img src="images/mobile-image-hero-2.jpg" alt="p2"></li>
+                <li class="slide"><img src="images/mobile-image-hero-3.jpg" alt="p3"></li>
+            </ul>
+            <div class="arrows">
+                <div class='carousel-button left' data-carousel-button="prev" role="button"><img
+                        src="images/icon-angle-left.svg" alt="left"></div>
+                <div class='carousel-button right' data-carousel-button="next" role="button"><img
+                        src="images/icon-angle-right.svg" alt="right"></div>
             </div>
-        </div>
-        <div class="arrows">
-            <div class='left' id="prevBtn" role="button" data-slide="prev"><img src="images/icon-angle-left.svg"
-                    alt="left"></div>
-            <div class='right' id="nextBtn" role="button" data-slide="next"><img src="images/icon-angle-right.svg"
-                    alt="right"></div>
         </div>
     </header>
     <nav class="menu-mobile">
@@ -91,6 +89,12 @@
 <script src="main.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
 </script>
 
 </html>
