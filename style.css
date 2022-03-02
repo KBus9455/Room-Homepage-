@@ -169,8 +169,12 @@ h2{
 height: 50%;
 margin: 0.4em 0 1em 2em;
 }
-img.photo{
-    width: 100vw;
+div.photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 @media  (min-width: 768px){
@@ -195,29 +199,49 @@ display: block;
 }
 .row1{
     height: 60vh;
+    overflow: hidden;
 }
-.row2 {
-    height: 40vh;
+
+header {
+    width: 58vw;
 }
-header{
-    width: 65vw;
+
+.row1 section {
+    width: 42vw;
+    padding: 60px;
 }
-.row1 section{
-    width: 45vw;
-}
-.row1 div.description{
-   max-width: 100%;
-}
+
 .carousel {
-    width: 65vw;
+    width: 58vw;
     height: 60vh;
 }
 nav.toppanel.desktop{
     position: fixed;
     z-index:100;
 }
-
+.row2 {
+    height: 40vh;
+}
+.row2 div.photo{
+    width: calc((100vw - 58vw - 160px));
+}
+.row2 div.description {
+    width: 10%;
+    flex-grow: 1;
+}
+.arrows div {
+    width: 80px;
+    height: 75px;
+    z-index: 4;
+}
+.arrows div {
+    right: -160px;
+}
+.arrows div.left {
+    right: -80px;
 }
 
+
+}
 
 
