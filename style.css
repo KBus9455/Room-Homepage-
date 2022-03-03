@@ -58,7 +58,7 @@ position: relative;
 }
 
 p.title{
-    position: fixed;
+    position: absolute;
     width: 100%;
     text-align: center;
     font-size: 1.5em;
@@ -128,6 +128,10 @@ align-items: center;
 width: 65px;
 height: 60px;
 z-index: 4;
+cursor: pointer;
+}
+.arrows div:hover{
+   background-color: rgb(90, 87, 87);
 }
 
 .arrows div.left {
@@ -136,18 +140,24 @@ z-index: 4;
 .arrows div img {
     height: 20px;
 }
+
 .description  {
 margin: 1.8rem;
 margin-bottom: 3.5rem;
 }
 h1 {
-    margin: 5rem 0 0.6rem 0;
+    font-size: 38px;
+    margin: 5rem 0 2rem 0;
+    font-weight: 600;
 }
 h2{
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing:0.3rem;    
     margin: 4rem 0 0.6rem 0;
+}
+.row2 h2{
+    font-weight: 700;
 }
  p {
     font-size: 12px;
@@ -159,6 +169,7 @@ h2{
     display: flex;
         margin: 4rem 0;
         height: 20px;
+        cursor: pointer;
 }
 .shopNowButton p{
     text-transform: uppercase;
@@ -177,7 +188,7 @@ div.photo img {
     object-position: center;
 }
 
-@media  (min-width: 768px){
+@media screen and (min-width: 900px) and (orientation: landscape) {
     body{
         max-width: 100vw;
         max-height: 100vh;
@@ -187,6 +198,23 @@ div.photo img {
 }
 .desktop {
 display: block;
+}
+.desktop ul {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    padding: 3.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+.desktop ul li:nth-child(1){
+ margin-right: 2.6rem;
+    font-size: 22px;
+}
+.desktop ul a {
+    color: #fff;
+    padding: 1rem;
+    font-size: 12px;
 }
 
 .wrapper{
@@ -198,7 +226,7 @@ display: block;
     display: flex;
 }
 .row1{
-    height: 60vh;
+    height: 66vh;
     overflow: hidden;
 }
 
@@ -208,19 +236,19 @@ header {
 
 .row1 section {
     width: 42vw;
-    padding: 60px;
+    padding: 30px;
 }
 
 .carousel {
     width: 58vw;
-    height: 60vh;
+    height: 66vh;
 }
 nav.toppanel.desktop{
     position: fixed;
     z-index:100;
 }
 .row2 {
-    height: 40vh;
+    height:34vh;
 }
 .row2 div.photo{
     width: calc((100vw - 58vw - 160px));
@@ -242,6 +270,31 @@ nav.toppanel.desktop{
 }
 
 
-}
+.shopNowButton {
+    margin: 3rem 0;
 
+}
+}
+@media screen and (min-width: 900px) and (min-height: 600px){
+    .row1 section{
+        padding: 10px;
+    }
+h1{
+    margin-top: 0;
+    font-size:28px;
+     
+}
+.shopNowButton{
+    margin: 1.5rem 0;
+}
+.row2 .description{
+    margin: 1.5rem;
+}
+h2{
+    margin: 1.5rem 0;
+}
+.row2 .description p {
+   font-size: 10px;
+}
+}
 
