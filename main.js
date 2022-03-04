@@ -27,7 +27,7 @@ buttons.forEach(button => {
     const slides = button
       .closest("[data-carousel]")
       .querySelector("[data-slides]")
-
+console.log(slides)
     const activeSlide = slides.querySelector("[data-active]")
     let newIndex = [...slides.children].indexOf(activeSlide) + offset
     if (newIndex < 0) newIndex = slides.children.length - 1
@@ -37,3 +37,24 @@ buttons.forEach(button => {
     delete activeSlide.dataset.active
   })
 })
+
+
+
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+
+    const offset = button.dataset.carouselButton === "next" ? 1 : -1;
+const texts = document.querySelector("[data-text]");
+const activeText = texts.querySelector("[data-active]")
+    
+    let newIndex = [...texts.children].indexOf(activeText) + offset
+    if (newIndex < 0) newIndex = texts.children.length - 1
+    if (newIndex >= texts.children.length) newIndex = 0
+
+    texts.children[newIndex].dataset.active = true
+    delete activeText.dataset.active
+  })
+})
+
+
