@@ -107,7 +107,6 @@ div.menu-bar {
 .menu-mobile ul li {
     line-height:7rem;
     text-align: center;
-
 }
 
 
@@ -150,11 +149,10 @@ cursor: pointer;
 .arrows div img {
     height: 20px;
 }
-
-.description  {
-margin: 1.8rem;
-margin-bottom: 3.5rem;
+.row1 section .description, .row2 .description {
+margin:2rem;
 }
+
 h1 {
     font-size: 38px;
     margin: 5rem 0 2rem 0;
@@ -196,6 +194,9 @@ div.photo img {
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+.toppanel .desktop ul li:hover{
+border: white 1px solid;
 }
 @media (min-width:400px){
 
@@ -273,11 +274,12 @@ nav.toppanel.desktop{
 }
 .row2 {
     height:34vh;
+    width:100%;
 }
 .row2 div.photo{
     width: calc((100vw - 58vw - 160px));
 }
-.row2 div.description {
+.row2 section {
     width: 10%;
     flex-grow: 1;
 }
@@ -299,6 +301,23 @@ nav.toppanel.desktop{
 
 }
 
+.row1 section, .row2 section {
+    position: relative;
+    flex-grow: 1;
+    
+}
+
+.row1 section .description,
+.row2 section .description {
+    margin: inherit;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+
+}
+
 }
 @media screen and (min-width: 900px) and (min-height: 500px){
     .row1 section{
@@ -312,9 +331,7 @@ h1{
 .shopNowButton{
     margin: 1.5rem 0;
 }
-.row2 .description{
-    margin: 1.5rem;
-}
+
 h2{
     margin: 1.5rem 0;
 }
