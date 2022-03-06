@@ -318,6 +318,12 @@ nav.toppanel.desktop{
 
 }
 
+/* move one page */
+html {
+    scroll-behavior: smooth;
+}
+
+
 }
 @media screen and (min-width: 900px) and (min-height: 500px){
     .row1 section{
