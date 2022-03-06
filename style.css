@@ -197,6 +197,20 @@ div.photo img {
     object-fit: cover;
     object-position: center;
 }
+@media (min-width:400px){
+
+    #firstPhotoSlider {
+        content: url("images/desktop-image-hero-1.jpg");
+    }
+
+    #secondPhotoSlider {
+        content: url("images/desktop-image-hero-2.jpg");
+    }
+
+    #thirdPhotoSlider {
+        content: url("images/desktop-image-hero-3.jpg");
+    }
+}
 
 @media screen and (min-width: 900px) and (orientation: landscape) {
     body{
@@ -284,6 +298,7 @@ nav.toppanel.desktop{
     margin: 3rem 0;
 
 }
+
 }
 @media screen and (min-width: 900px) and (min-height: 500px){
     .row1 section{
